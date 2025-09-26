@@ -1,0 +1,16 @@
+{
+  "name": "Provador Virtual",
+  "short_name": "Provador",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "description": "Envie uma foto sua e de uma roupa para ver como fica em você.",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
