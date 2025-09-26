@@ -227,7 +227,9 @@ const App: React.FC = () => {
         });
 
     } catch (err) {
-        setError(getFriendlyErrorMessage(err, `Falha ao mudar a cor para ${color}`));
+        // FIX: Argument of type 'unknown' is not assignable to parameter of type 'string'.
+        // Explicitly convert `err` to a string to satisfy the type checker.
+        setError(getFriendlyErrorMessage(String(err), `Falha ao mudar a cor para ${color}`));
     } finally {
         setIsLoading(false);
         setLoadingMessage('');
