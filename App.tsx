@@ -280,7 +280,7 @@ const App: React.FC = () => {
         return newHistory;
       });
     } catch (err) {
-      // The 'err' variable from a catch block is of type 'unknown'.
+      // FIX: The 'err' variable from a catch block is of type 'unknown'.
       // `getFriendlyErrorMessage` handles this conversion safely.
       setError(getFriendlyErrorMessage(err, 'Falha ao mudar de pose'));
       // Revert pose index on failure
